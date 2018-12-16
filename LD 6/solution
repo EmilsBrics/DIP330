@@ -1,0 +1,8 @@
+;Write a function which takes a variable number of parameters and returns the maximum value.
+
+(fn [x1 & x2] (reduce #(if (< %1 %2) %2 %1) x1 x2))
+
+
+;Write a function which returns true if the given sequence is a palindrome.
+
+(fn [x] (= (seq x) (reverse (seq x))))
